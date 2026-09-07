@@ -11,7 +11,7 @@
 
 void USART_Init(void) {
 	/*
-         * UBBR = (F_CPU/(8ul * BAUD)) - 1
+     * UBBR = (F_CPU/(8ul * BAUD)) - 1
 	 * UBRRL_VALUE = (UBBR & 0xFF)
 	 * UBBRH_VALUE = (UBBR >> 8)
 	 */
