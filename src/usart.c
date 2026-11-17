@@ -41,6 +41,12 @@ void USART_Transmit(uint8_t b) {
 	UDR0 = b;
 }
 
+void USART_TransmitData(char* data, uint8_t lenght) {
+	for (uint8_t i = 0; i < lenght; i++) {
+		USART_Transmit(data[i]);
+	}
+}
+
 uint8_t USART_Receive(void) {
 	/* Wait for receive complete */
 	while ( !( UCSR0A & (1<<RXC0)) );
