@@ -41,8 +41,8 @@ void USART_Transmit(uint8_t b) {
 	UDR0 = b;
 }
 
-void USART_TransmitData(char* data, uint8_t lenght) {
-	for (uint8_t i = 0; i < lenght; i++) {
+void USART_TransmitData(char* data, uint64_t lenght) {
+	for (uint64_t i = 0; i < lenght; i++) {
 		USART_Transmit(data[i]);
 	}
 }

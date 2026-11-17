@@ -12,7 +12,7 @@ extern "C" {
 void USART_Init();
 void USART_Init_RXinterupt();
 void USART_Transmit(uint8_t b);
-void USART_TransmitData(char* data, uint8_t lenght);
+void USART_TransmitData(char* data, uint64_t lenght);
 uint8_t USART_Receive(void);
 
 #ifdef __cplusplus
